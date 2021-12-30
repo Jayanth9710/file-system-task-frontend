@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { React, useEffect, useState} from "react";
 import env from "./Settings";
+import './App.css'
 
 
 function Folder() {
@@ -19,12 +20,15 @@ function Folder() {
         readFolder();
     }, [])
     return (
-        <div>
+        <div className='files__list__card'>
             {folderDetails.map((e,index)=>
             (
+                <div>
+                    <h1 className='Title'>Contents of the Folder</h1>
                 <h1>
-                    {folderDetails.name}
+                    {e}
                 </h1>
+                </div>
             )
             )}
         </div>
