@@ -1,7 +1,7 @@
 let getSettings = () => {
     return {
-        api:"http://localhost:3000"
-        //  api : "https://airbnb-clone-by-jay.herokuapp.com"
+        // api:"http://localhost:3000"
+         api : "https://file-system-task-jay.herokuapp.com"
         
     }
 }
